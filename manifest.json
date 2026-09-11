@@ -1,0 +1,12 @@
+{
+  "id": "com.sketchup.paste-check",
+  "name": "Paste Check",
+  "version": "1.0.0",
+  "creator": "SketchUp",
+  "description": "Loaded from a pasted GitHub address, to prove the mirror serves a running page.",
+  "mainFile": "index.html",
+  "platforms": ["ios", "web", "desktop"],
+  "window": { "type": "floating", "width": 320, "height": 320 },
+  "commands": { "open": { "title": "Paste Check" } },
+  "menuItems": [{ "type": "item", "commandId": "open" }]
+}

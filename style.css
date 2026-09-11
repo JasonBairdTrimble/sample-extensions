@@ -1,0 +1,7 @@
+body { font: 13px -apple-system, system-ui, sans-serif; margin: 16px; color: #333; }
+h1 { font-size: 15px; margin: 0 0 12px; }
+p { margin: 4px 0; }
+
+/* Replaces the failure text outright, so applied and not-applied cannot both read true. */
+#stylesheet span { display: none; }
+#stylesheet::before { content: "stylesheet: applied"; color: #0a7f28; }
