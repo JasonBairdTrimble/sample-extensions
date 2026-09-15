@@ -1,0 +1,23 @@
+{
+  "manifestFormatVersion": "1.0.0",
+  "id": "sample-tab-dashboard",
+  "name": "Tab Dashboard",
+  "description": "A full-tab layout that reports the window it actually got.",
+  "version": "1.0.0",
+  "creator": "SketchUp",
+  "mainFile": "index.html",
+  "window": {
+    "type": "tab",
+    "width": 900,
+    "height": 600
+  },
+  "commands": {
+    "open": {
+      "title": "Tab Dashboard",
+      "description": "Open the dashboard."
+    }
+  },
+  "menuItems": [
+    { "type": "item", "commandId": "open" }
+  ]
+}

@@ -1,0 +1,147 @@
+/* Each sample carries its own copy of this file, so a folder can be lifted out
+   and branched on its own without dragging shared assets along. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1d1d1f;
+  --muted: #6e6e73;
+  --line: #d2d2d7;
+  --accent: #0a7f28;
+  --warn: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1e;
+    --fg: #f2f2f7;
+    --muted: #98989d;
+    --line: #3a3a3c;
+    --accent: #30d158;
+    --warn: #ff6961;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 13px/1.4 -apple-system, system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+input[type='number'] {
+  width: 6em;
+  padding: 4px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+}
+
+button {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button:not(:disabled):active {
+  background: var(--line);
+}
+
+#status {
+  margin-top: 10px;
+  min-height: 1.4em;
+  color: var(--muted);
+}
+
+#status.ok { color: var(--accent); }
+#status.error { color: var(--warn); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 3px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+td:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+ul {
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+li button {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+li button[aria-current='true'] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* The layout only pays off at tab width; it collapses to one column when the
+   host gives the extension a narrow window instead. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+#window-report {
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+}

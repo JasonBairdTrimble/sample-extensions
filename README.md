@@ -1,8 +1,8 @@
 # Sample Extensions
 
-Working extensions to start from instead of a blank page. Each folder is complete and independent:
-a `manifest.json`, an `index.html`, an `app.js` and a `style.css`, with no build step, no
-dependencies and nothing shared between them.
+Working extensions to start from instead of a blank page. Each folder is complete and
+independent — a `manifest.json`, an `index.html` and an `app.js`, plus a `style.css` where the
+extension draws anything — with no build step, no dependencies and nothing shared between them.
 
 | Folder | Extension | Illustrates |
 |---|---|---|
@@ -11,6 +11,8 @@ dependencies and nothing shared between them.
 | [`model-cleanup/`](model-cleanup) | Model Report | Querying entities, entity types, purging unused assets |
 | [`content-3d/`](content-3d) | Bollard Stamper | Component definitions versus instances, transformations |
 | [`visualization/`](visualization) | Scene Switcher | Scenes, styles, and which calls need an operation |
+| [`tab-dashboard/`](tab-dashboard) | Tab Dashboard | A full-width layout, and detecting the window you got |
+| [`launch-watcher/`](launch-watcher) | Launch Watcher | Running at startup with no window, and reporting without one |
 
 ## Branching from one
 
