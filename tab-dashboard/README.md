@@ -1,19 +1,18 @@
-# Tab Dashboard — the `tab` window type
+# Entity Report
 
-A wide, multi-column dashboard that also reports which window the host actually gave it.
+Counts the top-level entities in the model, grouped by type.
 
 ## What it shows
 
-- **Declaring `"type": "tab"`.** A host that does not implement the type you asked for falls back
-  to a floating window rather than refusing the extension, so an unsupported type costs you the
-  layout, never the extension.
-- **Detecting the fallback.** Nothing tells your page which window type it got, so the sample
-  measures its own viewport against the width the manifest requested and says which it looks like.
-  That is a heuristic for testing, not a protocol call — there is no API that reports the type back.
-- **A layout that degrades.** The CSS grid uses `auto-fit`/`minmax`, so the three columns collapse
-  to one if the extension ends up in a narrow window.
+- **A read-only extension.** Counting needs no operation; only writes do.
+- **`entities.get()`** returns the model root — it does not recurse into groups or component
+  instances, which keeps the pass bounded.
+- **Turning a type into a name.** `entity.type` is a number; indexing `SketchUpApi.EntityType`
+  through itself gives you something printable.
 
 ## Worth knowing
 
-Window size is a request, not a guarantee. Write the page so it works at both widths and you never
-have to care which one you got.
+This sample declares `"window": { "type": "tab" }`. Not every host implements every window type; one
+that does not falls back to a floating window rather than refusing the extension, so declaring a
+type costs you the layout you asked for, never the extension itself. Write the page so it works at
+either width and you never have to care which you got.

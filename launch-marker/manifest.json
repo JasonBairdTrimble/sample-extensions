@@ -1,0 +1,22 @@
+{
+  "manifestFormatVersion": "1.0.0",
+  "id": "sample-launch-marker",
+  "name": "Launch Marker",
+  "description": "Draws a marker cube at the origin when SketchUp starts.",
+  "version": "1.0.0",
+  "creator": "SketchUp",
+  "mainFile": "index.html",
+  "loadAtLaunch": true,
+  "window": {
+    "type": "headless"
+  },
+  "commands": {
+    "stamp": {
+      "title": "Draw Launch Marker",
+      "description": "Draw the marker again."
+    }
+  },
+  "menuItems": [
+    { "type": "item", "commandId": "stamp" }
+  ]
+}

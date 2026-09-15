@@ -3,20 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tab Dashboard</title>
+  <title>Entity Report</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.habitat.sketchup.com/dist/sketchup-js-api/v2/sketchup-js-api.min.js"></script>
 </head>
 <body>
-  <h1>Tab Dashboard</h1>
-  <p id="window-report">Measuring…</p>
-
-  <div class="grid">
-    <section><h2>Model</h2><table><tbody id="model"></tbody></table></section>
-    <section><h2>Scenes</h2><ul id="scenes"><li>…</li></ul></section>
-    <section><h2>Styles</h2><ul id="styles"><li>…</li></ul></section>
-  </div>
-
+  <h1>Entity Report</h1>
+  <table><tbody id="report"></tbody></table>
   <button id="refresh" disabled>Refresh</button>
   <p id="status">Connecting…</p>
   <script src="app.js"></script>

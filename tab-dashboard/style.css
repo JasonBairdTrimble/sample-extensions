@@ -121,27 +121,3 @@ li button[aria-current='true'] {
   color: var(--accent);
 }
 
-/* The layout only pays off at tab width; it collapses to one column when the
-   host gives the extension a narrow window instead. */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-bottom: 12px;
-}
-
-h2 {
-  margin: 0 0 6px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-}
-
-#window-report {
-  padding: 6px 8px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  font-variant-numeric: tabular-nums;
-}

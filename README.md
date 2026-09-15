@@ -11,8 +11,8 @@ extension draws anything — with no build step, no dependencies and nothing sha
 | [`model-cleanup/`](model-cleanup) | Model Report | Querying entities, entity types, purging unused assets |
 | [`content-3d/`](content-3d) | Bollard Stamper | Component definitions versus instances, transformations |
 | [`visualization/`](visualization) | Scene Switcher | Scenes, styles, and which calls need an operation |
-| [`tab-dashboard/`](tab-dashboard) | Tab Dashboard | A full-width layout, and detecting the window you got |
-| [`launch-watcher/`](launch-watcher) | Launch Watcher | Running at startup with no window, and reporting without one |
+| [`tab-dashboard/`](tab-dashboard) | Entity Report | Counting entities by type |
+| [`launch-marker/`](launch-marker) | Launch Marker | Running at startup with no window, and writing to the model |
 
 ## Branching from one
 
