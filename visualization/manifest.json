@@ -1,0 +1,26 @@
+{
+  "manifestFormatVersion": "1.0.0",
+  "id": "sample-visualization",
+  "name": "Scene Switcher",
+  "description": "Switches between the model's scenes and styles. Visualization sample.",
+  "version": "1.0.0",
+  "creator": "SketchUp",
+  "mainFile": "index.html",
+  "window": {
+    "type": "floating",
+    "width": 300,
+    "height": 420
+  },
+  "commands": {
+    "open": {
+      "title": "Scene Switcher",
+      "description": "Switch scenes and styles."
+    }
+  },
+  "menuItems": [
+    {
+      "type": "item",
+      "commandId": "open"
+    }
+  ]
+}

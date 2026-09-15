@@ -1,0 +1,26 @@
+{
+  "manifestFormatVersion": "1.0.0",
+  "id": "sample-space-planning",
+  "name": "Room Blocker",
+  "description": "Blocks out a room from width, depth and height. Space planning sample.",
+  "version": "1.0.0",
+  "creator": "SketchUp",
+  "mainFile": "index.html",
+  "window": {
+    "type": "floating",
+    "width": 300,
+    "height": 300
+  },
+  "commands": {
+    "open": {
+      "title": "Room Blocker",
+      "description": "Block out a room."
+    }
+  },
+  "menuItems": [
+    {
+      "type": "item",
+      "commandId": "open"
+    }
+  ]
+}

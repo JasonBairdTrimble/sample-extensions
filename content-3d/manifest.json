@@ -1,0 +1,26 @@
+{
+  "manifestFormatVersion": "1.0.0",
+  "id": "sample-content-3d",
+  "name": "Bollard Stamper",
+  "description": "Builds a component once and stamps a row of instances. Content and 3D support sample.",
+  "version": "1.0.0",
+  "creator": "SketchUp",
+  "mainFile": "index.html",
+  "window": {
+    "type": "floating",
+    "width": 300,
+    "height": 300
+  },
+  "commands": {
+    "open": {
+      "title": "Bollard Stamper",
+      "description": "Stamp a row of bollards."
+    }
+  },
+  "menuItems": [
+    {
+      "type": "item",
+      "commandId": "open"
+    }
+  ]
+}

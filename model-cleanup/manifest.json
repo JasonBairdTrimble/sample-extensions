@@ -1,0 +1,26 @@
+{
+  "manifestFormatVersion": "1.0.0",
+  "id": "sample-model-cleanup",
+  "name": "Model Report",
+  "description": "Counts what is in the model and purges unused materials, components and styles. Model cleanup sample.",
+  "version": "1.0.0",
+  "creator": "SketchUp",
+  "mainFile": "index.html",
+  "window": {
+    "type": "floating",
+    "width": 300,
+    "height": 400
+  },
+  "commands": {
+    "open": {
+      "title": "Model Report",
+      "description": "Report on the model and purge unused assets."
+    }
+  },
+  "menuItems": [
+    {
+      "type": "item",
+      "commandId": "open"
+    }
+  ]
+}

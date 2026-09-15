@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bollard Stamper</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.habitat.sketchup.com/dist/sketchup-js-api/v2/sketchup-js-api.min.js"></script>
+</head>
+<body>
+  <h1>Bollard Stamper</h1>
+  <p>One definition, many instances.</p>
+
+  <label>Count <input id="count" type="number" value="6" min="1" max="50" step="1"></label>
+  <label>Spacing (ft) <input id="spacing" type="number" value="4" min="1" step="0.5"></label>
+
+  <button id="stamp" disabled>Stamp row</button>
+
+  <p id="status">Connecting…</p>
+  <script src="app.js"></script>
+</body>
+</html>
